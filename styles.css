@@ -1,0 +1,1029 @@
+@import url(https://fonts.googleapis.com/css?family=Raleway);
+@import url('https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@300..700&display=swap');
+h2 {
+  vertical-align: center;
+  text-align: center;
+}
+
+html, body {
+  margin: 0;
+  height: 100%;
+}
+
+* {
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;;
+  box-sizing: border-box;
+}
+/*------------------------------------- MENU NAV--------------------------------------------------------*/
+.top-nav {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-around;
+  background-color: #00BAF0;
+  background: linear-gradient(to left, #ffffff, #ffffff);
+  /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+  color: #000000;
+  height: 150px;
+  padding: 1em;
+}
+.top-nav-logo {
+  display: flex;
+  align-items: center;
+  gap: 20px;
+}
+.top-nav-logo img {
+  width: 120px;
+}
+.top-nav-logo span {
+  font-size: 25px;
+}
+.menu {
+  display: flex;
+  flex-direction: row;
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+}
+
+.menu > li {
+  display: flex;
+  align-items: center;
+  margin: 0 1rem;
+  overflow: hidden;
+}
+li > a {
+  text-decoration: none;
+  color: #030000;
+}
+li > button {
+  height: 50px;
+  width: 145px;
+  background-color: red;
+  color: white;
+  font-weight: bold;
+  border-radius: 5px;
+  font-size: 0.8;
+  font-family: sans-serif;
+  cursor: pointer;
+
+
+}
+
+li > button:hover {
+  height: 50px;
+  width: 145px;
+  background-color: rgb(0, 0, 0);
+  color: rgb(43, 255, 0);
+  font-weight: bold;
+  border-radius: 5px;
+  font-size: 0.8;
+  font-family: sans-serif;
+  cursor: pointer;
+  transition: 1s;
+}
+
+.menu-button-container {
+  display: none;
+  height: 50px;
+  width: 50px;
+  cursor: pointer;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+#menu-toggle {
+  display: none;
+}
+
+.menu-button,
+.menu-button::before,
+.menu-button::after {
+  display: block;
+  background-color: #020202;
+  position: absolute;
+  height: 4px;
+  width: 40px;
+  transition: transform 400ms cubic-bezier(0.23, 1, 0.32, 1);
+  border-radius: 2px;
+  z-index: 5;
+}
+
+.menu-button::before {
+  content: '';
+  margin-top: -8px;
+}
+
+.menu-button::after {
+  content: '';
+  margin-top: 8px;
+}
+
+#menu-toggle:checked + .menu-button-container .menu-button::before {
+  margin-top: 0px;
+  transform: rotate(405deg);
+}
+
+#menu-toggle:checked + .menu-button-container .menu-button {
+  background: rgba(34, 34, 34, 0.062);
+}
+
+#menu-toggle:checked + .menu-button-container .menu-button::after {
+  margin-top: 0px;
+  transform: rotate(-405deg);
+}
+.contato-franquia,
+.form-container,
+.container_matriz_filiais,
+.about,
+.text-responsive,
+.diferenciais-link,
+.diferenciais-cards,
+.diferenciais-title,
+.container-logo p {
+  display: none;
+  }
+  .franquia-text {
+    display: none;
+  }
+  .Container-franquia {
+    display: flex;
+    width: 100%;
+    background-image: url(./img/onda-bg.png);
+    background-repeat: no-repeat;
+    background-size: contain;
+    background-position: bottom;
+    justify-content: space-around;
+    margin-top: 100px;
+ 
+
+  }
+  .franquia-text2 {
+    display: flex;
+    flex-direction: column;
+    gap: 3rem;
+    width: 30%;
+    
+  }
+  .franquia-text2 h1 {
+    font-family: "Space Grotesk", sans-serif;
+    font-size: 3rem;
+    font-weight: 400;
+  }
+  .franquia-text2 a {
+    display: flex;
+    background-color: #000000;
+    color: #ffffff;
+    text-align: center;
+    height: 70px;
+    justify-content: center;
+    align-items:center;
+    border-radius: 10px;
+    text-decoration: none;
+    font-size: 1.5rem;
+    width:  250px;
+  }
+    .franquia-text2 a:hover {
+    display: flex;
+    background-color: #ff0000;
+    color: #ffffff;
+    text-align: center;
+    height: 70px;
+    justify-content: center;
+    align-items:center;
+    border-radius: 10px;
+    text-decoration: none;
+    font-size: 1.5rem;
+    width:  250px;
+    transition: 1s;
+  }
+  .text2-icons {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    gap: 10px;
+  }
+  .text2-icons img {
+    width: 40px;
+    height: 40px;
+  }
+  .franquia-img {
+    width: 30%;
+  }
+  .container-voce-sabia {
+    display: flex;
+    justify-content: center;
+    gap: 100px;
+    background-color: yellow;
+    margin-top: 80px;
+    box-shadow: -1px -58px 123px 147px rgba(255,255,255,1);
+    -webkit-box-shadow: -1px -58px 123px 147px rgba(255,255,255,1);
+    -moz-box-shadow: -1px -58px 123px 147px rgba(255,255,255,1);
+  }
+  .voce-sabia-img {
+    display: flex;
+    flex-direction: column-reverse;
+    align-items: center;
+    margin-top: 30px;
+  }
+   .voce-sabia-img img {
+    width: 200px;
+   }
+  .voce-sabia-text {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 2em;
+    font-family: sans-serif;
+    width: 50%;
+
+  }
+    .voce-sabia-img h1 {
+      font-family: "Space Grotesk", sans-serif;
+      font-size: 2rem;
+      font-weight: 400;
+    }
+    .container-como-funciona {
+      display: flex;
+      flex-direction: column;
+      margin-top: 80px;
+      width: 100%;
+    }
+    .como-funciona-title {
+      width: 40%;
+      margin-left: 15%;
+      font-size: 1.5em;
+      
+    }
+    .como-funciona-cards {
+      display: flex;
+      flex-direction: row;
+      justify-content:space-evenly;
+      margin-top: 80px;
+      width: 100%;
+    }
+    .card_produto {
+      display: flex;
+      flex-direction: column;
+      justify-content: center; 
+      align-items: center;
+      width: 300px;
+    }
+    .card_produto p {
+      height: 120px;
+      text-align: center;
+      padding: 0px 20px;
+    }
+    .card_produto img {
+      margin-top: 15px;
+      border: 2px solid black;
+    }
+    .red-line {
+      background-color: red;
+      width: 100%;
+      height: 100px;
+      margin-top: 80px;
+    }
+
+    .container-pq-famly {
+      display: flex;
+      flex-direction: row;
+      justify-content: space-evenly;
+      width: 100%;
+      margin-top: 50px;
+    }
+    .family-img {
+      width: 35%;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+    }
+    .family-text {
+       width: 35%;
+       display: flex;
+       flex-direction: column;
+      justify-content: center;
+      align-items: center;
+    }
+    .family-title h1 {
+      font-family: "Space Grotesk", sans-serif;
+      text-align: center;
+    }
+    .family-icons {
+      display: flex;
+      flex-direction: row;
+      flex-wrap: wrap;
+      width: 80%;
+      gap: 30px;
+      margin-bottom: 30px;
+    }
+    .icon-family {
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+      text-align: center;
+      width: 150px;
+    }
+    .icon-family img {
+      width: 80px;
+    }
+    .family-lin a {
+      background-color: #000000;
+      color: #ffffff;
+      padding: 10px 30px;
+      border-radius: 10px;
+      text-decoration: none;
+    }
+    .container-comentarios {
+      width: 100%;
+      display: flex;
+      flex-direction: column;
+    }
+    .container-coment-title {
+      display: flex;
+      flex-direction: row;
+      align-items: center;
+      margin-left: 10%;
+      margin-top: 30px;
+    }
+     .container-coment-title a {
+      background-color: yellow;
+      border: 1px solid black;
+      padding: 10px 20px;
+      border-radius: 10px;
+      text-decoration: none;
+      color: black;
+      text-shadow: black;
+      margin-left: 80px;
+      font-weight: bold;
+     }
+     .container-cards {
+      width: 100%;
+      display: flex;
+      flex-direction: row;
+      justify-content: space-evenly;
+      margin-top: 80px;
+     }
+
+     .comentario-card {
+      width: 300px;
+      border: 2px rgb(0, 0, 0) solid;
+      border-radius: 10px;
+     }
+     .card-c-title {
+      background-color: #000000;
+      color: #ffffff;
+      border-radius: 10px 10px 0px 0px;
+      margin-top: -22px;
+     }
+     .card-c-texto {
+     text-align: center;
+     height: 300px;
+     overflow: hidden;
+     text-overflow: ellipsis;
+     white-space: nowarp;
+     }
+     .card-c-texto p {
+      padding: 0px 30px;
+      height: 300px;
+      font-size: 0.9rem;
+      
+  
+     }
+     .coment-img-text {
+      display: flex;
+      flex-direction: row;
+      width: 100%;
+      height: 100px;
+      bottom: 0;
+     }
+     .coment-img {
+      width: 50%;
+     }
+     .coment-text {
+      display: flex;
+      flex-direction: column;
+     }
+     .container-planos {
+      width: 100%;
+      margin-top: 100px;
+      margin-top: -3px;
+
+     }
+     .container-promocao {
+      display: flex;
+      flex-direction: row;
+      justify-content: space-evenly;
+      margin-top: 50px;
+      
+     }
+     .promocao-texto {
+      width: 30%;
+      display: flex;
+      flex-direction: column;
+      gap: 30px;
+     }
+     .promocao-texto a {
+      background-color: yellow;
+      padding: 10px 20px;
+      width: 30%;
+      text-align: center;
+      text-decoration: none;
+      border: 1px solid black;
+      border-radius: 10px;
+      color: black;
+     }
+     .promocao-card {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+
+     }
+     .promocao-card  .promo-link {
+      background-color: yellow;
+      padding: 10px 20px;
+      border: 1px solid black;
+      border-radius: 10px;
+      text-decoration: none;
+      color: #000000;
+      font-weight: bold;
+      margin-bottom: -15px;
+      z-index: 4;
+
+     }
+     .contrate-link, .link-card {
+      background-color: yellow;
+      padding: 20px 90px;
+      border: 1px solid black;
+      border-radius: 10px;
+      text-decoration: none;
+      color: #000000;
+      font-weight: bold;
+      margin-top: -15px;
+     }
+     .card-p-corpo {
+      width: 400px;
+      height: 350px;
+      background-color: #000000;
+      color: #ffffff;
+     }
+     .h2-plano {
+      margin-left: -150px;
+      font-size: 2rem;
+     }
+     .h1-plano {
+      font-size: 4rem;
+      margin-left: 80px;
+      margin-top: -30px;
+     }
+     .span-plano {
+      font-size: 2rem;
+      margin-left: -40px;
+      position: absolute;
+     }
+     .h1-sema {
+      margin-top: -60px;
+      font-size: 3rem;
+      margin-left: 70%;
+     }
+     .h2-sema {
+      font-size: 1rem;
+      margin-left: 50%;
+      margin-top: -30px;
+     }
+     .card-p-corpo p {
+      padding: 0px 40px;
+      text-align: left;
+      font-weight: bold;
+      text-shadow: #ffffff;
+     }
+     .plan-list {
+      display: flex;
+      flex-direction: row;
+      justify-content: center;
+      gap: 80px;
+      margin-top: 200px;
+     }
+     .red-line4 {
+      background-color: red;
+      width: 100%;
+      height: 100px;
+      margin-top: 100px;
+     }
+     .container-duvida {
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+     }
+     .container-duvida img {
+      width: 900px;
+      margin-bottom: -35px;
+      z-index: 4;
+     }
+
+
+     .green-line {
+      width: 100%;
+      height: 100px;
+      background-color: rgb(126, 216, 7);
+     }
+
+     .footer-container {
+      width: 100%;
+      display: flex;
+      flex-direction: row;
+      background-color: rgb(126, 216, 7);
+     }
+     .container-logo {
+      display: flex;
+      justify-content: center;
+      width: 20%;
+      gap: 20px;
+      
+      
+     }
+     .container-logo h1 {
+       font-size: 1.5rem;
+     }
+     .container-logo span {
+      font-size: 1rem;
+     }
+     .container-logo img {
+      width: 80px;
+      height: 80px;
+     }
+     .container-socials {
+      background-color: rgb(118, 199, 11);
+      width: 60%;
+      
+     }
+     .social-null {
+      width: 20%;
+      
+     }
+     .sociais {
+      display: flex;
+     }
+     .sociais-esq {
+      display: flex;
+      flex-direction: column;
+      align-items: flex-start;
+      margin-left: 20px;
+      margin-top: 100px;
+      gap: 50px;
+      width: 50%;
+      
+     }
+     .sociais-esq a {
+      color: #000000;
+     }
+     .sociais-dir {
+       display: flex;
+      flex-direction: column;
+      align-items: end;
+      margin-right: 20px;
+      margin-top: 100px;
+      gap: 20px;
+      width: 50%;
+      
+     }
+     .sociais-dir a {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      width: 150px;
+      height: 50px;
+      text-decoration: none;
+      color: black;
+      border: 1px solid black;
+     }
+     .sociais-botton {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      gap: 40px;
+      margin-top: 10px;
+     } 
+     .sociais-botton a {
+      color: #000000;
+     }
+     .dev-container {
+      height: 80px;
+      background-color: #000000;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      color: white;
+     }
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/*////////////////////////////////////////////////////////////////RESPONSIVIDADE //////////////////////////////////////////////////////////*/
+
+
+
+
+
+
+
+
+/*DISPLAY SMARTH PHONES*/
+@media (max-width: 700px) {
+  .menu-button-container {
+    display: flex;
+  }
+  .top-nav-logo {
+    width: 100%;
+    margin-right: -80px;
+    margin-top: 200px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  .top-nav-logo h1,
+  .container-comentarios,
+  .franquia-text2,
+  .como-funciona-title p,
+  .container-planos,
+  .container-plan-list,
+  .green-line,
+  .container-duvida img,
+  .red-line4,
+  .container-socials,
+  .container-logo h1,
+  .dev-container {
+    display: none;
+  }
+  .franquia-text,
+  .form-container,
+  .about,
+  .diferenciais-title,
+  .diferenciais-link,
+  .container-logo p {
+    display: block;
+  }
+  li > button {
+    display: block;
+  }
+  .contato-franquia {
+  display: block;
+  display: flex;
+  justify-content: center;
+  width: 100%;
+  }
+#contato-franquia {
+  height: 40px;
+  width: 80%;
+  background-color: red;
+  color: white;
+  font-weight: bold;
+  border-radius: 5px;
+  margin-top: 30px;
+  }
+  .menu {
+    position: absolute;
+    top: 0;
+    margin-top: 50px;
+    left: 0;
+    flex-direction: column;
+    width: 100%;
+    justify-content: center;
+    align-items: center;
+  }
+  #menu-toggle ~ .menu li {
+    height: 0;
+    margin: 0;
+    padding: 0;
+    border: 0;
+    transition: height 400ms cubic-bezier(0.23, 1, 0.32, 1);
+  }
+  #menu-toggle:checked ~ .menu li {
+    border: 1px solid #313131;
+    background-color: rgb(90, 90, 90);
+    height: 3.2em;
+    padding: 0.5em;
+    transition: height 400ms cubic-bezier(0.23, 1, 0.32, 1);
+  }
+  .menu > li {
+    display: flex;
+    justify-content: center;
+    margin: 0;
+    padding: 0.5em 0;
+    width: 100%;
+    color: rgb(255, 254, 254);
+    background-color: #222;
+  }
+  .menu > li:not(:last-child) {
+    border-bottom: 1px solid #444;
+  }
+  .Container-franquia {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    height: 500px;
+    margin-top: 100px;
+  }
+  .franquia-text {
+    margin-top: 20px;
+    width: 80%;
+  }
+  .franquia-img {
+    display: flex;
+    justify-content: center;
+    width: 100%;
+
+  }
+  .franquia-img > img {
+    width: 60%;
+  }
+  .form {
+    display: flex;
+    justify-content: space-around;
+    flex-direction: row;
+    width: 100%;
+    margin-top: 2rem;
+  }
+.input_form {
+    background-color: grey;
+    border: 2px solid red;
+    border-radius: 5px;
+  }
+  .form-esquerdo {
+    display: flex;
+    flex-direction: column;
+    width: 35%;
+    gap: 0.5em;
+    font-weight: bold;
+  }
+  .form-direito {
+    display: flex;
+    flex-direction: column;
+    width: 35%;
+    gap: 0.5em;
+    font-weight: bold;
+  }
+  .form-submit {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 40px;
+  }
+  .subimit-btn {
+    background-color: rgb(31, 117, 14);
+    padding: 10px 80px;
+    border-radius: 20px;
+    color: white;
+  }
+  .container_matriz_filiais {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin-top: 30px;
+    gap: 30px;
+  }
+  .card_lojas img {
+    margin-top: 10px;
+      width: 180px;
+    }
+  .card_lojas {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 90%;
+    gap: 10px;
+    border-radius: 10px;
+    box-shadow: -1px 0px 5px 2px rgba(0,0,0,0.54);
+    -webkit-box-shadow: -1px 0px 5px 2px rgba(0,0,0,0.54);
+    -moz-box-shadow: -1px 0px 5px 2px rgba(0,0,0,0.54);
+  }
+  .link-card {
+    background-color: yellow;
+    padding: 10px 100px;
+    border-radius: 40px;
+    border: 1px solid #0000003d;
+    font-weight: bold;
+    margin-top: 20px;
+    text-decoration: none;
+    color: #000000;
+  }
+  .card_lojas > p {
+    padding: 0px 20px;
+  }
+  .container-voce-sabia {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    margin-top: 30px;
+    background-color: yellow;
+  }
+  .voce-sabia-img,  .voce-sabia-text {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 80%;
+    font-weight: bold;
+
+  }
+  .voce-sabia-img img {
+    width: 200px;
+  }
+  .about {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+  }
+  .about p {
+    padding: 0px 50px;
+    font-size: 1em;
+  }
+  .container-como-funciona {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin-top: 50px;
+    width: 100%;
+  }
+  .container-como-funciona h1 {
+    font-size: 1.5em;
+    width: 600px;
+    margin-left: -150px;
+  }
+  .como-funciona-cards {
+      display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 100px;
+    width: 100%;
+  }
+
+  .card_produto {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 80%;
+    border-radius: 10px;
+    box-shadow: -1px 0px 5px 2px rgba(0,0,0,0.54);
+    -webkit-box-shadow: -1px 0px 5px 2px rgba(0,0,0,0.54);
+    -moz-box-shadow: -1px 0px 5px 2px rgba(0,0,0,0.54);
+  }
+  .card_produto p {
+    padding: 0px 20px;
+    text-align: center;
+  }
+   .card_produto img {
+    margin-bottom: 10px;
+   }
+   .red-line {
+    width: 100%;
+    height: 80px;
+    margin-top: 20px;
+    background-color: red;
+   }
+   .container-pq-famly {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+
+   }
+   .family-title {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 600px;
+    margin-top: 30px;
+   }
+   .family-icons {
+    width: 300%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 50px;
+   }
+   .icon-family {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    border-radius: 10px;
+    width: 80%;
+      box-shadow: -1px 0px 5px 2px rgba(79, 129, 223, 0.54);
+    -webkit-box-shadow: -1px 0px 5px 2px rgba(129, 111, 230, 0.54);
+    -moz-box-shadow: -1px 0px 5px 2px rgba(92, 130, 235, 0.54);
+   }
+   .icon-family img {
+    width: 150px;
+    margin-bottom: 20px;
+    margin-top: 20px;
+   }
+   .family-lin {
+    margin-top: 30px;
+    text-align: center;
+    margin-bottom: 30px;
+    font-weight: bold;
+   }
+  .diferenciais-family {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+  }
+  .diferenciais-cards {
+    display: flex;
+    flex-direction: column;
+    margin-top: 30px;
+    border: 4px solid rgb(0, 0, 0);
+    border-radius: 20px;
+    width: 80%;
+    margin: 10px;
+  }
+  .card-d-title {
+    background-color: #000000;
+    border-radius: 20px 20px 0px 0px;
+    color: #ffffff;
+    text-align: center;
+    margin: 10px;
+  
+  }
+  .card-d-texto p {
+    padding: 0px 30px;
+  }
+  .diferenciais-link {
+    margin-top: 30px;
+  }
+.container-duvida {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  height: 200px;
+  margin-top: 30px;
+}
+  .footer-container {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background-color: yellow;
+  }
+
+  .footer-container img {
+    margin-top: 20px;
+    width: 150px;
+    height: 150px;
+    
+  }
+  .container-logo p {
+    width: 600px;
+    text-align: center;
+  }
+  .container-logo {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+  
+
+}
