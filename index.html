@@ -3,8 +3,8 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Family Passadoria - Início</title>
-  <link rel="stylesheet" href="styles.css">
+  <title>Family Passadoria | passar roupa</title>
+  <link rel="stylesheet" href="./css/styles_matriz.css">
   <link rel="shortcut icon" type="imagex/png" href="./img/icons/icon.ico">
 </head>
 <body>
@@ -13,48 +13,22 @@
   </header>
   <section class="top-nav">
     <div class="top-nav-logo">
-      <img src="./img/logo.png" alt="Logo">
-      <h1>Family Passadoria<br><span>Unidade Santana</span></h1>
-      
+      <img src="./img/logo.png" alt="Logo">      
     </div>
     <input id="menu-toggle" type="checkbox" />
     <label class='menu-button-container' for="menu-toggle">
     <div class='menu-button'></div>
   </label>
     <ul class="menu">
-      <li><a href="">Início</a></li>
-      <li><a href="">Produto</a></li>
-      <li><a href="">Contato</a></li>
-      <li><button>Entre em contato</button></li>
+      <li><a href="https://api.whatsapp.com/send/?phone=5511981684181&text=Ola%2C+tenho+interesse&type=phone_number&app_absent=0">Entre em Contato</a></li>
     </ul>
   </section>
 
-  <main class="Container-franquia">
-    <div class="contato-franquia">
-      <button id="contato-franquia">Entre em Contato</button>
-    </div>
-     <div class="franquia-text">  <!-- RESPONSIVO-->
-      <p>Quer se tornar um franqueado investindo apenas R$ 15.900,00 (Promoção de Lancamento) e ter  seu próprio negócio, dentro da sua casa? Então Cadastre-se agora mesmo para participar do nosso processo de seleção!</p>
-     </div>
-     <div class="franquia-text2">
-      <h1>Conheça nossa Family.</h1>
-      <p>Uma mãe e um filho trabalham em conjunto há 4 anos com a missão de livrar as pessoas da tarefa mais odiada de casa, passar roupa. Facilitamos o seu dia a dia, garantindo que suas roupas estejam perfeitamente passadas e prontas para uso.</p>
-      <a href="">Entre em contato</a>
-      <div class="text2-icons">
-        <img src="./img/icons/padlock.png" alt="">
-        <p>Praticidade e comodidade</p>
-         <img src="./img/icons/padlock.png"  alt="">
-        <p> Atendimento humanizado</p>
-         <img src="./img/icons/padlock.png"  alt="">
-        <p>Delivery Incluso</p>
-      </div>
-     </div>
-     <div class="franquia-img">
-      <img src="./img/img-franquia.png" alt="personas-trabalho-em-grupo">
-     </div>
-    </main>
-
     <section class="form-container">
+      <div class="container_form_dir">
+       <div class="franquia-text">
+      <p>Quer se tornar um franqueado investindo apenas R$ 15.900,00 (Promoção de Lancamento) e ter  seu próprio negócio, dentro da sua casa? Então Cadastre-se agora mesmo para participar do nosso processo de seleção!</p>
+     </div> 
       <form class="form" action="">
         <div class="form-esquerdo">
               <label for="name">Nome</label>
@@ -69,40 +43,63 @@
             </div>
             <div class="form-direito">
                 <label for="cidade">Cidade</label>
-                <input class="input_form" type="text" required>
+                <input class="input_form" type="text" placeholder="Cidade" required>
                 <label for="telefone">Telefone</label>
-                <input class="input_form" type="tel" required>
+                <input class="input_form" type="tel" placeholder="Telefone" required>
             </div>
       </form>
-      <div class="form-submit">
+            <div class="form-submit">
               <button class="subimit-btn" type="submit" form=""> Seja um franqueado</button>
+            </div>
+            </div>
+            <div class="container_form_esq">
+              <div class="container_form_img">
+                <img src="./img/img-franquia.png" alt="">
+              </div>
             </div>
     </section>
 
 
 
     <article class="container_matriz_filiais">
+      <div class="container_text_cards">
+       <h1>Unidade</h1>
+      </div>
+      <div class="container_cards_filiais">
       <div class="card_lojas">
+        <div class="card_loja_img">
         <img src="./img/logo.png" alt="">
-        <a class="link-card" href="">Family Passadoria Santana</a>
+        </div>
+        <div class="card_loja-content">
         <p>Rua Lacaia, 21 Imirim - 02467-002</p>
         <a href="">santana@familypassadoria.com.br</a>
-        <p>(11) 94708-5143</p>
+        <p><img class="img2" src="./img/icons/whatsapp2.png" alt="">(11) 94708-5143</p>
+        <a class="link-card" href="family_Santana.html">Family Passadoria Santana</a>
+        </div>
       </div>
-      <h1>Unidade</h1>
       <div class="card_lojas">
-         <img src="./img/logo.png" alt="">
-        <a  class="link-card" href="">Family Passadoria Jaçanã</a>
+        <div class="card_loja_img">
+        <img src="./img/logo.png" alt="">
+        </div>
+        <div class="card_loja-content">
         <p>Rua Araguaia Feitosa Martins, 352 - Casa 09 Vila Nova Mazzei - 02322-130</p>
         <a href="">jacana@familypassadoria.com.br</a>
-        <p>(11) 95314-7008</p>
+        <p><img src="./img/icons/whatsapp2.png" alt="">(11) 95314-7008</p>
+        <a class="link-card" href="family_Jacana.html">Family Passadoria Jaçanã</a>
+        </div>
       </div>
       <div class="card_lojas">
-         <img src="./img/logo.png" alt="">
-        <a class="link-card" href="">Family Passadoria Rondonópolis</a>
-        <p>Rua E, 37 jardim Ebenézer MT 78.715-347</p>
+        <div class="card_loja_img">
+        <img src="./img/logo.png" alt="">
+        </div>
+        <div class="card_loja-content">
+        
+        <p>Rua E, 37 Jardim Ebenézer MT 78.715-347</p>
         <a href="">rondonopolis@familypassadoria.com.br</a>
-        <p>(66) 99634-0815</p>
+        <p><img src="./img/icons/whatsapp2.png" alt="">(66) 99634-0815</p>
+        <a class="link-card" href="family_Rondonopolis.html">Family Passadoria Rondonópolis</a>
+        </div>
+      </div>
       </div>
     </article>
 
@@ -120,9 +117,11 @@
 
 
     <section class="about">
-      <h1> Nossa Historia</h1>
+      <div class="about_content">
+      <h1> Nossa História</h1>
       <p> A Familly Passadoria nasceu da necessidade de seus idealizadores de terem mais tempo livre para oque realmente importava: Maior Qualidade de vida. Assim surge esse modelo de negócio, rentavel, de baixo investimento e com a estrutura completa para garantir o sucesso ao seus Franqueados. Nossa missão é transformar a vida de muitos brasileiros, levando independencia financeira e gerando empregos.</p>
       <a class="link-card" href="#form-container">Seja um franqueado</a>
+      </div>
     </section>
 
 
@@ -196,7 +195,7 @@
           </div>
         </div>
         <div class="family-lin">
-          <a class="link-card" href="####">Entre em contato</a>
+          <a class="link-card" href="https://api.whatsapp.com/send/?phone=5511981684181&text=Ola%2C+tenho+interesse&type=phone_number&app_absent=0">Entre em contato</a>
         </div>
       </div>
     </section>
@@ -204,67 +203,7 @@
 
     <div class="red-line"></div>
 
-    <section class="container-comentarios">
-          <div class="container-coment-title">
-            <h1>O que nossos clientes dizem</h1>
-            <a href="">Somos 5 estrelas no Google</a>
-          </div>
-      <div class="container-cards">
-              <div class="comentario-card">
-                  <div class="card-c-title">
-                    <h2>...</h2>
-                  </div>
-              <div class="card-c-texto">
-                <p>Gente, o sossego me veio depois de encaminhar a passadoria das minhas roupa para a Family Passadoria. Sempre pontuais, caprichosos, sem intercorrencias. Indico sempre o serviço deles para todos, porque a comodidade de não me preocupar mais com isso, é demais. Hoje, me preocupo em lavar, separar e contar as peças. E pronto! Toda semana tem roupa passadinha, só para guardar no armário. Como não amar!!!!</p>
-              </div>
-                <div class="coment-img-text">
-                    <div class="coment-img">
-                      <img src="" alt="">
-                    </div>
-                    <div class="coment-text">
-                      <a href="##">Nome</a>
-                      <p>Family desde ANO</p>
-                    </div>
-                </div>
-            </div>
-      <div class="comentario-card">
-        <div class="card-c-title">
-          <h2>...</h2>
-        </div>
-        <div class="card-c-texto">
-          <p>A empresa é ótima! Bom custo-benefício, são super atenciosos e profissionais. Utilizo há algum tempo e sempre fiquei satisfeita com os serviços!</p>
-        </div>
-        <div class="coment-img-text">
-          <div class="coment-img">
-            <img src="" alt="">
-          </div>
-          <div class="coment-text">
-            <a href="##">Nome</a>
-            <p>Family desde ANO</p>
-          </div>
-        </div>
-      </div>
-      <div class="comentario-card">
-        <div class="card-c-title">
-          <h2>...</h2>
-        </div>
-        <div class="card-c-texto">
-          <p>Estou a mais de 1 ano usando os serviços da Family Passadoria. Sempre pontuais, atenciosos e entregando um serviço de qualidade com ótimo atendimento!</p>
-        </div>
-        <div class="coment-img-text">
-          <div class="coment-img">
-            <img src="" alt="">
-          </div>
-          <div class="coment-text">
-            <a href="##">Nome</a>
-            <p>Family desde ANO</p>
-          </div>
-        </div>
-      </div>
-      </div>
-    </section>
-    
-    <section class="diferenciais-family">
+<section class="diferenciais-family">
       <div class="diferenciais-title">
         <h1>Diferenciais da Family Passadoria</h1>
       </div>
@@ -324,121 +263,34 @@
         </div>
       </div>
       <div class="diferenciais-link">
-        <a class="link-card" href="#">Faça parte da nossa Family</a>
+        <a class="link-card" href="https://api.whatsapp.com/send/?phone=5511981684181&text=Ola%2C+tenho+interesse&type=phone_number&app_absent=0">Faça parte da nossa Family</a>
       </div>
     </section>
 
-
-    <div class="red-line"></div>
-
-    <section class="container-planos">
-      <div class="container-promocao">
-        <div class="promocao-texto">
-          <h1>Conheça nossos planos e suas vantagens</h1>
-          <p>Quer deixar as roupas da sua casa organizada e não se preocupar mais com isso: Com os nossos planos, isso é possível. Basta escolher o plano que se encaixa na sua necessidade e volume de roupas. Sendo 1 vez por semana e no final do mês você realiza o pagamento. Tudo de uma forma simples, prática e segura.</p>
-          <a class="contrate-link" href="####">Saiba mais</a>
-        </div>
-        <div class="promocao-card">
-          <a class="promo-link" href="">Melhor custo benefício</a>
-          <div class="card-p-corpo">
-            <H2 class="h2-plano">Plano Casal</H2>
-            <h1 class="h1-plano"><span class="span-plano">R$</span>124</h1>
-            <h1 class="h1-sema">30</h1>
-            <h2 class="h2-sema">Peças por semana</h2>
-            <p>Plano ideal para os casais que desejam economizar e ter mais tempo livre. 8 especiais</p>
-          </div>
-          <a class="contrate-link" href="####">Contrate</a>
-        </div>
-      </div>
-    </section>
-    <section class="container-plan-list">
-      <div class="plan-list">
-        <div class="promocao-card">
-          
-          <div class="card-p-corpo">
-            <H2 class="h2-plano">Plano Executivo</H2>
-            <h1 class="h1-plano"><span class="span-plano">R$</span>50</h1>
-            <h1 class="h1-sema">5</h1>
-            <h2 class="h2-sema">Peças por semana<br>Camisa Social</h2>
-            <p>Plano ideal para quem trabalha de camisa social e não tem tempo ou prática de passar.</p>
-          </div>
-          <a class="contrate-link" href="####">Contrate</a>
-        </div>
-        <div class="promocao-card">
-          
-          <div class="card-p-corpo">
-            <H2 class="h2-plano">Plano Light</H2>
-            <h1 class="h1-plano"><span class="span-plano">R$</span>55</h1>
-            <h1 class="h1-sema">10</h1>
-            <h2 class="h2-sema">Peças por semana</h2>
-            <p>Plano ideal para quem não tem muita demanda de roupa e precisa de uma ajuda extra.</p>
-          </div>
-          <a class="contrate-link" href="####">Contrate</a>
-        </div>
-        <div class="promocao-card">
-          
-          <div class="card-p-corpo">
-            <H2 class="h2-plano">Plano Familiar</H2>
-            <h1 class="h1-plano"><span class="span-plano">R$</span>160</h1>
-            <h1 class="h1-sema">40</h1>
-            <h2 class="h2-sema">Peças por semana</h2>
-            <p>Plano ideal para ajudar a familia na rotina, como roupas da escola, roupas </p>
-          </div>
-          <a class="contrate-link" href="####">Contrate</a>
-        </div>
-      </div>
-    </section>
     <div class="red-line4"></div>
+
 
     <section class="container-duvida">
       <h1>Ficou com Dúvida?</h1>
-      <a class="link-card" href="####">Saiba Mais</a>
-      <img src="./img/ficou-duvidas.png" alt="">
-      <div class="green-line"></div>
-
+      <a class="link-card" href="https://api.whatsapp.com/send/?phone=5511981684181&text=Ola%2C+tenho+interesse&type=phone_number&app_absent=0">Saiba Mais</a>
     </section>
-
-
 
   <footer>
     <div class="footer-container">
-          <div class="container-logo">
-            <img src="./img/logo.png" alt="">
-            <h1>Family Passadoria<br><span>Unidade Santana</span></h1>
-            
-            <p>© 2025 Family Passadoria - Todos os direitos reservados</p>
+           <div class="sociais-esq">
+              <p>TR TEIXEIRA COMÉRCIO E SERVIÇOS LTDA</p>
+              <p>CNPJ: 39.543.546/0001-24</p>
+              <p>Administração e Estoque:</p>
+              <p>Rua Octacilio Malheiros, 175 - Gopoúva - Guarulhos - SP</p>
+              <p>TELEFONES: (11) 3513-2247 / 3513-5671</p>
+              <p>WHATSAPP: (11) 98168-4181</p>
+              <p>EMAIL: cadastro@familypassadoria.com.br</p>
           </div>
-            <div class="container-socials">
-              <div class="sociais">
-                <div class="sociais-esq">
-                  <a href=""><img src="./img/icons/whatsapp.png" alt="logo-wathsap"></a>
-                  <a href="">(11) 94708-5143</a>
-                  <a href="">familypassadoria@gmail.com</a>
-                  <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3659.104132416686!2d-46.64937241323342!3d-23.49275847430563!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x94cef7b8e45502f1%3A0x511d550757565956!2sR.%20Iacaia%20-%20Imirim%2C%20S%C3%A3o%20Paulo%20-%20SP%2C%2002467-002!5e0!3m2!1spt-BR!2sbr!4v1758570568958!5m2!1spt-BR!2sbr" width="600" height="150" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
-                </div>
-                <div class="sociais-dir">
-                    <a href="">Quem Somos</a>
-                    <a href="">Como Funciona</a>
-                    <a href="">A Family</a>
-                    <a href="">Depoimentos</a>
-                    <a href="">Fale Conosco</a>
-
-                </div>
-              </div>
-            <div class="sociais-botton">
-              <p>Links rápidos</p>
-              <a href="">Termos e condições</a>
-              <a href="">Politica de privacidade</a>
-              <a href="">Politica de Cookies</a>
-              <a href=""><img src="./img/icons/instagram.png" alt="logo-instagram"></a>
-              <a href=""><img src="./img/icons/facebook-app-symbol.png" alt="logo-facebook"></a>
-              <a href=""><img src="./img/icons/twitter.png" alt="logo-twitter"></a>
-              <a href=""><img src="./img/icons/linkedin.png" alt="logo-linkedin"></a>
-              <a href=""><img src="./img/icons/youtube.png" alt="logo-youtube"></a>
-              <a href=""><img src="./img/icons/tik-tok.png" alt="logo-tiktok"></a>
-            </div>
+           <div class="sociais-dir">
+              <img src="./img/logo.png" alt="">
           </div>
-          <div class="social-null"></div>
+   </div>
+         
 
     </div>
     <div class="dev-container">
