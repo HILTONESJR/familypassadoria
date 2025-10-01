@@ -14,7 +14,7 @@ html, body {
   font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;;
   box-sizing: border-box;
 }
-/*------------------------------------- MENU NAV--------------------------------------------------------*/
+/*---------------------------------------------------------------------------- MENU NAV MAIORES QUE 1280PX --------------------------------------------------------------------*/
 .top-nav {
   display: flex;
   flex-direction: row;
@@ -141,6 +141,7 @@ li > button:hover {
   margin-top: 0px;
   transform: rotate(-405deg);
 }
+/*---------------------------------------------------------------------------- MENU NAV  FIM MAIORES QUE 1280PX --------------------------------------------------------------------*/
 .franquia-text2,
 .contato-franquia,
 .como-funciona-title,
@@ -157,7 +158,7 @@ li > button:hover {
     display: block;
   }
 
-  /* -----------------------------------------------------------------------------------Form Container ----------------------------------------------------------------------------------*/
+  /*---------------------------------------------------------------------------- FORM CONTAINER MAIORES QUE 1280PX --------------------------------------------------------------------*/
   .form-container {
     display: flex;
     flex-direction: row;
@@ -187,6 +188,9 @@ li > button:hover {
   .container_form_esq {
     width: 35%;
     margin-top: 200px;
+  }
+  .container_form_esq img {
+    width: 700px;
   }
   .form {
     display: flex;
@@ -245,7 +249,10 @@ li > button:hover {
     font-weight: bold;
     transition: 1s;
   }
-  /* -----------------------------------------------------------------------------------Lojas Cards ----------------------------------------------------------------------------------------*/
+  /*---------------------------------------------------------------------- FORM CONTAINER  MAIORES QUE 1280PX -----------------------------------------------------------------------------*/
+
+
+  /*------------------------------------------------------------------------ CARD LOJAS MAIORES QUE 1280PX --------------------------------------------------------------------------------*/
   .container_matriz_filiais {
     width: 100%;
     display: flex;
@@ -311,7 +318,573 @@ li > button:hover {
     margin-bottom: -10px;
 
   }
-  /* ---------------------------------------------------------------------------------Lojas Cards (FIM)------------------------------------------------------------------------------------*/
+  /*--------------------------------------------------------------------- CARD LOJAS MAIORES QUE 1280PX ----------------------------------------------------------------------------*/
+
+  /*--------------------------------------------------------------- CONTAINER VOCE SABIA MAIORES QUE 1280PX ------------------------------------------------------------------------*/
+  .container-voce-sabia {
+    display: flex;
+    justify-content: center;
+    gap: 100px;
+    background-color: yellow;
+    margin-top: 80px;
+    box-shadow: -1px -58px 123px 147px rgba(255,255,255,1);
+    -webkit-box-shadow: -1px -58px 123px 147px rgba(255,255,255,1);
+    -moz-box-shadow: -1px -58px 123px 147px rgba(255,255,255,1);
+  }
+  .voce-sabia-img {
+    display: flex;
+    flex-direction: column-reverse;
+    align-items: center;
+    margin-top: 30px;
+  }
+   .voce-sabia-img img {
+    width: 200px;
+   }
+  .voce-sabia-text {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 2em;
+    font-family: sans-serif;
+    width: 50%;
+
+  }
+    .voce-sabia-img h1 {
+      font-family: "Space Grotesk", sans-serif;
+      font-size: 2rem;
+      font-weight: 400;
+    }
+    .container-como-funciona {
+      display: flex;
+      flex-direction: column;
+      margin-top: 80px;
+      width: 100%;
+    }
+    /*--------------------------------------------------------------- CONTAINER VOCE SABIA MAIORES QUE 1280PX --------------------------------------------------------------------------*/
+
+    /*---------------------------------------------------------------------- SOBRE MAIORES QUE 1280PX ----------------------------------------------------------------------------------*/
+    .about {
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+      font-size: 1.5em;
+      
+    }
+    .about_content h1 {
+      margin-top: 100px;
+    }
+    .about_content {
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+      width: 800px;
+      font-weight: bold;
+    }
+    /*---------------------------------------------------------------------- SOBRE MAIORES QUE 1280PX ----------------------------------------------------------------------------------*/
+
+    /*------------------------------------------------------------------- COMO FUNCIONA MAIORES QUE 1280PX ------------------------------------------------------------------------------*/
+    .como-funciona-cards {
+      display: flex;
+      flex-direction: row;
+      justify-content:space-evenly;
+      width: 100%;
+    }
+    .card_produto {
+      display: flex;
+      flex-direction: column;
+      justify-content: center; 
+      align-items: center;
+      width: 300px;
+    }
+    .card_produto p {
+      height: 120px;
+      text-align: center;
+      padding: 0px 20px;
+    }
+    .card_produto img {
+      margin-top: 15px;
+      border: 2px solid black;
+    }
+    /*---------------------------------------------------------------- COMO FUNCIONA MAIORES QUE 1280PX ------------------------------------------------------------------------------*/
+    .red-line {
+      background-color: red;
+      width: 100%;
+      height: 100px;
+      margin-top: 80px;
+    }
+    /*---------------------------------------------------------------- PQ FAMILY  MAIORES QUE 1280PX ---------------------------------------------------------------------------------*/  
+    .container-pq-famly {
+      display: flex;
+      flex-direction: row;
+      justify-content: space-evenly;
+      width: 100%;
+      margin-top: 50px;
+    }
+    .family-img {
+      width: 35%;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+    }
+    .family-text {
+       width: 48%;
+       display: flex;
+       flex-direction: column;
+      justify-content: center;
+      align-items: center;
+    }
+    .family-title h1 {
+      font-family: "Space Grotesk", sans-serif;
+      text-align: center;
+    }
+    .family-icons {
+      display: flex;
+      flex-direction: row;
+      flex-wrap: wrap;
+      width: 60%;
+      gap: 30px;
+      margin-bottom: 30px;
+    }
+    .icon-family {
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+      text-align: center;
+      width: 150px;
+    }
+    .icon-family img {
+      width: 80px;
+    }
+    .family-lin a {
+      background-color: #000000;
+      color: #ffffff;
+      padding: 10px 30px;
+      border-radius: 10px;
+      text-decoration: none;
+      font-weight: bold;
+    }
+    .family-lin a:hover {
+      background-color: #bbff00;
+      color: #050000;
+      padding: 10px 30px;
+      border-radius: 10px;
+      border: 1px solid black;
+      text-shadow: #000000;
+      font-weight: bold;
+      text-decoration: none;
+      transition: 1s;
+    }
+    /*---------------------------------------------------------------- PQ FAMILY  MAIORES QUE 1280PX ---------------------------------------------------------------------------------*/
+
+
+     .red-line4 {
+      background-color: red;
+      width: 100%;
+      height: 100px;
+      margin-top: 100px;
+     }
+
+     /*---------------------------------------------------------------- PQ DUVIDA  MAIORES QUE 1280PX --------------------------------------------------------------------------------*/
+     .container-duvida {
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+     }
+     .container-duvida img {
+      width: 900px;
+      margin-bottom: -35px;
+      z-index: 4;
+     }
+    .link-card {
+    background-color: yellow;
+    padding: 10px 15px;
+    border-radius: 40px;
+    border: 1px solid #0000003d;
+    font-weight: bold;
+    margin-top: 20px;
+    text-decoration: none;
+    color: #000000;
+  }
+    .link-card:hover {
+    background-color: rgb(10, 10, 10);
+    padding: 10px 15px;
+    border-radius: 40px;
+    border: 1px solid #ffffff;
+    font-weight: bold;
+    margin-top: 20px;
+    text-decoration: none;
+    color: #a6ff00;
+    transition: 1s;
+  }
+    /*---------------------------------------------------------------- PQ DUVIDA  MAIORES QUE 1280PX --------------------------------------------------------------------------------*/
+
+     .green-line {
+      width: 100%;
+      height: 180px;
+      margin-top: 80px;
+      background-color: rgb(126, 216, 7);
+     }
+   /*------------------------------------------------------------------- FOOTER  MAIORES QUE 1280PX --------------------------------------------------------------------------------*/
+     .footer-container {
+      width: 100%;
+      display: flex;
+      margin-top: 80px;
+      flex-direction: row;
+      justify-content: center;
+      align-items: center;
+      justify-content: space-evenly;
+      background-color: yellow;
+     }
+     .sociais-esq {
+      width: 30%;
+      margin-top: 30px;
+      
+     }
+      .sociais-dir {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        margin-top: 30px;
+        width: 30%;
+     
+     }
+    .sociais-dir img {
+      width: 200px;
+    }
+    
+     .dev-container {
+      height: 80px;
+      background-color: #000000;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      color: white;
+     }
+    /*------------------------------------------------------------------- FOOTER  MAIORES QUE 1280PX ----------------------------------------------------------------------------------*/
+
+
+
+
+/*-------------------------------------------------------------------Tablets e Macbooks max-width: 1280px- ----------------------------------------------------------------------------*/
+
+
+
+
+@media (max-width: 1280px) {
+
+/*---------------------------------------------------------------------MENU NAVEGAÇÃO max-width: 1280px--------------------------------------------------------------------------------*/
+.top-nav {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-around;
+  background-color: #00BAF0;
+  background: linear-gradient(to left, #ffffff, #ffffff);
+  /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+  color: #000000;
+  height: 150px;
+  padding: 1em;
+}
+.top-nav-logo {
+  display: flex;
+  align-items: center;
+  gap: 20px;
+}
+.top-nav-logo img {
+  width: 120px;
+}
+.top-nav-logo span {
+  font-size: 25px;
+}
+.menu {
+  display: flex;
+  flex-direction: row;
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+}
+
+.menu > li {
+  display: flex;
+  align-items: center;
+  margin: 0 1rem;
+  overflow: hidden;
+}
+li > a {
+  text-decoration: none;
+  color: #030000;
+}
+li > a {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  height: 50px;
+  width: 145px;
+  background-color: red;
+  color: white;
+  font-weight: bold;
+  border-radius: 5px;
+  font-size: 0.8;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  text-shadow: 2px 2px 4px black;
+  border: 1px solid black;
+  cursor: pointer;
+
+
+}
+
+li > button:hover {
+  height: 50px;
+  width: 145px;
+  background-color: rgb(0, 0, 0);
+  color: rgb(43, 255, 0);
+  font-weight: bold;
+  border-radius: 5px;
+  font-size: 0.8;
+  font-family: sans-serif;
+  cursor: pointer;
+  transition: 1s;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  text-shadow: 2px 2px 4px black;
+}
+
+.menu-button-container {
+  display: none;
+  height: 50px;
+  width: 50px;
+  cursor: pointer;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+#menu-toggle {
+  display: none;
+}
+
+.menu-button,
+.menu-button::before,
+.menu-button::after {
+  display: block;
+  background-color: #020202;
+  position: absolute;
+  height: 4px;
+  width: 40px;
+  transition: transform 400ms cubic-bezier(0.23, 1, 0.32, 1);
+  border-radius: 2px;
+  z-index: 5;
+}
+
+.menu-button::before {
+  content: '';
+  margin-top: -8px;
+}
+
+.menu-button::after {
+  content: '';
+  margin-top: 8px;
+}
+
+#menu-toggle:checked + .menu-button-container .menu-button::before {
+  margin-top: 0px;
+  transform: rotate(405deg);
+}
+
+#menu-toggle:checked + .menu-button-container .menu-button {
+  background: rgba(34, 34, 34, 0.062);
+}
+
+#menu-toggle:checked + .menu-button-container .menu-button::after {
+  margin-top: 0px;
+  transform: rotate(-405deg);
+}
+
+/*---------------------------------------------------------------------MENU NAVEGAÇÃO FIM max-width: 1280px--------------------------------------------------------------------------------*/
+.franquia-text2,
+.contato-franquia,
+.como-funciona-title,
+.text-responsive,
+.franquia-text2,
+.diferenciais-link,
+.diferenciais-cards,
+.diferenciais-title,
+.container-logo p,
+.red-line4 {
+  display: none;
+  }
+  .como-funciona-title h1 {
+    display: block;
+  }
+
+  /* ----------------------------------------------------------------------Form Container max-width: 1280px-----------------------------------------------------------------------------*/
+  .form-container {
+    display: flex;
+    flex-direction: row;
+    width: 100%;
+    align-items: center;
+    justify-content: center;
+    gap: 2rem;
+  }
+   .franquia-text {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+  
+   }
+   
+  .franquia-text p {
+    font-size: 1.6rem;
+    font-weight: bold;
+    padding: 0px 20px;
+  }
+  .container_form_dir {
+    display: flex;
+    flex-direction: column;
+    gap: 5rem;
+    width: 40%;
+    margin-top: 50px;
+  }
+  .container_form_esq {
+    width: 50%;
+    margin-top: 200px;
+  }
+  .container_form_esq img {
+    width: 700px;
+  }
+  .form {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+  }
+  .form-esquerdo {
+    display: flex;
+    width: 280px;
+    gap: 8px;
+    flex-direction: column;
+    
+  }
+  .form-esquerdo  input, .form-esquerdo select {
+    border-radius: 5px;
+    border: 2px black solid;
+    padding: 5px;
+    background-color: rgb(187, 187, 187);
+  }
+  .form-direito {
+    display: flex;
+    width: 280px;
+    gap: 8px;
+    flex-direction: column;
+    
+  }
+   .form-direito  input {
+    border-radius: 5px;
+    border: 2px black solid;
+    padding: 5px;
+    background-color: rgb(187, 187, 187);
+  }
+  input::placeholder {
+    color: #000000;
+  }
+  .form-submit {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+  .subimit-btn {
+    width: 80%;
+    border-radius: 40px;
+    background-color: rgba(14, 233, 123, 0.842);
+    padding: 10px 50px;
+    cursor: pointer;
+    font-weight: bold;
+  }
+   .subimit-btn:hover {
+    width: 80%;
+    border-radius: 40px;
+    background-color: rgb(133, 136, 133);
+    padding: 10px 50px;
+    cursor: pointer;
+    font-weight: bold;
+    transition: 1s;
+  }
+  /*---------------------------------------------------------------------------------FORM CONTAINER FIM ------------------------------------------------------------------------------------*/
+
+  /* -------------------------------------------------------------------------Lojas Cards max-width: 1280px --------------------------------------------------------------------------------*/
+  .container_matriz_filiais {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin-top: 30px;
+    gap: 30px;
+  }
+  .container_cards_filiais {
+    width: 80%;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    margin-top: 30px;
+    gap: 30px;
+  }
+  .container_text_cards h1 {
+    font-size: 4em;
+
+  }
+  .card_lojas img {
+    margin-top: 10px;
+      width: 180px;
+    }
+  .card_lojas {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    width: 600px;
+    height: 250px;
+    gap: 40px;
+    border-radius: 10px;
+    box-shadow: -1px 0px 5px 2px rgba(0,0,0,0.54);
+    -webkit-box-shadow: -1px 0px 5px 2px rgba(0,0,0,0.54);
+    -moz-box-shadow: -1px 0px 5px 2px rgba(0,0,0,0.54);
+  }
+  .link-card {
+    background-color: yellow;
+    padding: 10px 15px;
+    border-radius: 40px;
+    border: 1px solid #0000003d;
+    font-weight: bold;
+    margin-top: -7px;
+    text-decoration: none;
+    color: #000000;
+  }
+  .card_lojas > p {
+    padding: 0px 20px;
+  }
+  .card_loja-content {
+    display: flex;
+    width: 300px;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+  .card_loja-content img {
+    width: 30px;
+    margin-right: 10px;
+    margin-bottom: -10px;
+
+  }
+  /* --------------------------------------------------------------------------------Lojas Cards (FIM)-------------------------------------------------------------------------------------*/
+
+  /* ----------------------------------------------------------------CONTAINER VOCE SABIA max-width: 1280px -------------------------------------------------------------------------------*/
   .container-voce-sabia {
     display: flex;
     justify-content: center;
@@ -392,28 +965,35 @@ li > button:hover {
       margin-top: 15px;
       border: 2px solid black;
     }
+
+    /* -----------------------------------------------------------------------CONTAINER VOCE SABIA FIM ---------------------------------------------------------------------------------*/
     .red-line {
       background-color: red;
       width: 100%;
       height: 100px;
       margin-top: 80px;
     }
-
+    /* -------------------------------------------------------------------CONTAINER FAMILY max-width: 1280px ---------------------------------------------------------------------------*/
     .container-pq-famly {
       display: flex;
       flex-direction: row;
       justify-content: space-evenly;
       width: 100%;
+      gap: 100px;
       margin-top: 50px;
     }
     .family-img {
-      width: 35%;
+      width: 20%;
       display: flex;
       justify-content: center;
       align-items: center;
+      margin-left: 140px;
+    }
+    .family-img img {
+      width: 400px;
     }
     .family-text {
-       width: 48%;
+       width: 60%;
        display: flex;
        flex-direction: column;
       justify-content: center;
@@ -437,10 +1017,10 @@ li > button:hover {
       justify-content: center;
       align-items: center;
       text-align: center;
-      width: 150px;
+      width: 80px;
     }
     .icon-family img {
-      width: 80px;
+      width: 40px;
     }
     .family-lin a {
       background-color: #000000;
@@ -461,12 +1041,15 @@ li > button:hover {
       text-decoration: none;
       transition: 1s;
     }
+
+    /* ------------------------------------------------------------------------- COUNTAINER FAMILY FIM ------------------------------------------------------------------------------------*/
      .red-line4 {
       background-color: red;
       width: 100%;
       height: 100px;
       margin-top: 100px;
      }
+     /* ----------------------------------------------------------------- CONTAINER DUVIDA max-width: 1280px ------------------------------------------------------------------------------*/
      .container-duvida {
       display: flex;
       flex-direction: column;
@@ -499,7 +1082,7 @@ li > button:hover {
     color: #a6ff00;
     transition: 1s;
   }
-
+/* ---------------------------------------------------------------------------- CONTAINER DUVIDA FIM ---------------------------------------------------------------------------------*/
 
      .green-line {
       width: 100%;
@@ -507,7 +1090,7 @@ li > button:hover {
       margin-top: 80px;
       background-color: rgb(126, 216, 7);
      }
-
+/* -------------------------------------------------------------------- CONTAINER FOOTER max-width: 1280px ---------------------------------------------------------------------------*/
      .footer-container {
       width: 100%;
       display: flex;
@@ -545,6 +1128,8 @@ li > button:hover {
       color: white;
      }
 
+/* ------------------------------------------------------------------------------ CONTAINER FOOTER FIM ----------------------------------------------------------------------------------*/
+}
 
 
 
@@ -563,23 +1148,13 @@ li > button:hover {
 
 
 
-
-
-
-
-
-
-/*////////////////////////////////////////////////////////////////RESPONSIVIDADE //////////////////////////////////////////////////////////*/
-
-
-
-
-
+/*-----------------------------------------------------------------------  RESPONSIVIDADE  max-width: 700px -----------------------------------------------------------------------------*/
 
 
 
 /*DISPLAY SMARTH PHONES*/
 @media (max-width: 700px) {
+/*--------------------------------------------------------------------------  MENU NAV max-width: 700px ---------------------------------------------------------------------------------*/
   .menu-button-container {
     display: flex;
   }
@@ -677,6 +1252,11 @@ li > button:hover {
   .menu > li:not(:last-child) {
     border-bottom: 1px solid #444;
   }
+  /*----------------------------------------------------------------------  MENU NAV FIM  max-width: 700px -----------------------------------------------------------------------------*/
+
+  /*--------------------------------------------------------------------  CONTAINER FORM  max-width: 700px -----------------------------------------------------------------------------*/
+
+
   .Container-franquia {
     display: flex;
     flex-direction: column;
@@ -688,16 +1268,14 @@ li > button:hover {
   }
   .franquia-text {
     margin-top: 20px;
-    width: 80%;
+    width: 90%;
+    text-align: center;
   }
-  .franquia-img {
-    display: flex;
-    justify-content: center;
+  .franquia-text p {
+    font-size: 1rem;
+  }
+  .container_form_esq img {
     width: 100%;
-
-  }
-  .franquia-img > img {
-    width: 60%;
   }
   .form {
     display: flex;
@@ -746,6 +1324,10 @@ li > button:hover {
     border-radius: 20px;
     color: white;
   }
+    /*--------------------------------------------------------------------  CONTAINER FORM  max-width: 700px -----------------------------------------------------------------------------*/
+
+
+    /*----------------------------------------------------------------------  CARD LOJAS  max-width: 700px -------------------------------------------------------------------------------*/
   .container_matriz_filiais {
     width: 100%;
     display: flex;
@@ -764,7 +1346,7 @@ li > button:hover {
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    width: 90%;
+    width: 100%;
     height: auto;
     padding-bottom: 10px;
     gap: 10px;
@@ -792,6 +1374,10 @@ li > button:hover {
     margin-bottom: -10px;
 
   }
+   /*----------------------------------------------------------------------  CARD LOJAS  max-width: 700px -------------------------------------------------------------------------------*/
+
+
+    /*----------------------------------------------------------------------  VOCE SABIA  max-width: 700px -------------------------------------------------------------------------------*/
   .container-voce-sabia {
     display: flex;
     flex-direction: column;
@@ -816,6 +1402,9 @@ li > button:hover {
   .voce-sabia-text p {
     font-size: 1.5rem;
   }
+   /*----------------------------------------------------------------------  VOCE SABIA  max-width: 700px ---------------------------------------------------------------------------------*/
+
+  /*----------------------------------------------------------------------  SOBRE / HISTORIA  max-width: 700px ----------------------------------------------------------------------------*/
   .about {
     display: flex;
     flex-direction: column;
@@ -837,6 +1426,10 @@ li > button:hover {
    .about_content p {
     font-size: 1.2rem;
    }
+   /*----------------------------------------------------------------------  SOBRE / HISTORIA  max-width: 700px ----------------------------------------------------------------------------*/
+
+
+   /*------------------------------------------------------------------------  COMO FUNCIONA  max-width: 700px -----------------------------------------------------------------------------*/
   .container-como-funciona {
     display: flex;
     flex-direction: column;
@@ -883,12 +1476,15 @@ li > button:hover {
    .card_produto img {
     margin-bottom: 10px;
    }
+   /*----------------------------------------------------------------------  COMO FUNCIONA  max-width: 700px ----------------------------------------------------------------------------*/
    .red-line {
     width: 100%;
     height: 80px;
     margin-top: 20px;
     background-color: red;
    }
+
+   /*-------------------------------------------------------------------------  FAMILY max-width: 700px --------------------------------------------------------------------------------*/
    .container-pq-famly {
     width: 100%;
     display: flex;
@@ -935,6 +1531,7 @@ li > button:hover {
     width: 250%;
    }
    .family-lin {
+    width: 300px;
     margin-top: 30px;
     text-align: center;
     margin-bottom: 30px;
@@ -979,6 +1576,10 @@ li > button:hover {
   .diferenciais-link {
     margin-top: 30px;
   }
+
+  /*----------------------------------------------------------------------  FAMILY  max-width: 700px ---------------------------------------------------------------------------------*/
+
+  /*-----------------------------------------------------------------  CONTAINER DUVIDA  max-width: 700px ----------------------------------------------------------------------------*/
 .container-duvida {
   display: flex;
   flex-direction: column;
@@ -988,6 +1589,7 @@ li > button:hover {
   height: 200px;
   margin-top: 30px;
 }
+/*------------------------------------------------------------------------ FOOTER  max-width: 700px ---------------------------------------------------------------------------------*/
   .footer-container {
     display: flex;
     flex-direction: column;
@@ -1016,6 +1618,6 @@ li > button:hover {
     width: 100%;
   }
   
-  
+/*------------------------------------------------------------------------ FOOTER  max-width: 700px ---------------------------------------------------------------------------------*/
 
 }
